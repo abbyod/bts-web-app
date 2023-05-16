@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <!--meta below is used for adding certain characters to words-->
+        <meta charset="uft-8"/>
+        <title>Capital Investment</title>
+        <script>
+
+        //function prompt to ask for something 
+        let amount = prompt("How much would you like to invest?")
+        let interest = prompt("How much interest are you paying? (0.05 to 0.99)")
+        let year = prompt("How many years are you paying for?")
+        let capital = amount + (amount * interest) 
+        let principal = capital + (capital * interest) 
+
+        function capitalInvest(amount, interest) {
+            return amount * (interest) + amount
+        }
+
+        //function alert to show a message
+        alert ("You have " + capital + "in capital after 1 year and " + capitalInvest + " after " + year + " years")
+        </script>
+    </head>
+    <body>
+        <h1>Capital Investment</h1>
+    </body>
+</html>
