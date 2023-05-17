@@ -4,16 +4,22 @@
         <meta charset="uft-8"/>
         <title>User Age</title>
         <script>
-        //function prompt to ask for something 
-        let age = prompt("How old are you?")
+
+        //function to ask for something 
+        function displayYears() {
+            var age = parseInt(prompt("How old are you?"));
+            var output = "";
 
         //let conditions
-        if(age < 1){
-            alert ("Error: You need to insert a number greater than 1.")
+        for (var i = 1; i <= age; i++) {
+        output += i + "\n";
         }
 
-        //function alert to show a message
-        alert ("You are " + age + " years old!")
+        alert("Years reached:\n" + output);
+        }
+    
+        displayYears();
+        
         </script>
     </head>
     <body>
