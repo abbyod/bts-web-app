@@ -1,0 +1,22 @@
+<html>
+<head>
+  <title>Years Reached</title>
+  <script>
+    function displayYears() {
+      var age = parseInt(prompt("Enter your age:"));
+      var output = "";
+
+      for (var i = 1; i <= age; i++) {
+        output += i ;
+      }
+
+      document.getElementById("years").innerHTML = output;
+    }
+  </script>
+</head>
+<body>
+  <h1>Years Reached</h1>
+  <button onclick="displayYears()">Calculate</button>
+  <div id="years"></div>
+</body>
+</html>
