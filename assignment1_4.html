@@ -7,17 +7,21 @@
 
         //function prompt to ask for something 
         let amount = prompt("How much would you like to invest?")
-        let interest = prompt("How much interest are you paying? (0.05 to 0.99)")
-        let year = prompt("How many years are you paying for?")
-        let capital = amount + (amount * interest) 
-        let principal = capital + (capital * interest) 
+        let interestRate = prompt("How much interest are you paying? (0.05 to 0.99)")
+        let years = prompt("How many years are you paying for?")
 
-        function capitalInvest(amount, interest) {
-            return amount * (interest) + amount
+        let inputAmount = Number(amount)
+        let inputInterest = Number(interestRate)
+        let inputYear = Number(years)
+
+        let capital = amount
+
+        function capitalInvest(amount, interestRate) {
+            return amount * (interestRate) + amount
         }
 
         //function alert to show a message
-        alert ("You have " + capital + "in capital after 1 year and " + capitalInvest + " after " + year + " years")
+        alert ("You have " + capital + "in capital after 1 year and " + capitalInvest + " after " + years + " years")
         </script>
     </head>
     <body>
