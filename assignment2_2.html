@@ -1,30 +1,18 @@
 <html>
 <head>
 <meta charset="uft-8"/>
-  <title>School: Calculate Average</title>
+  <title>Calculate Average of Student Scores</title>
   <script>
-
-
-
-
-
-    const arrayNumbers = [1, 3, -1, 5, -3, 10];
-    var positiveNumbers = [];
-    var sum = 0;
-
-    for (var i = 0; i < numbers; i++) {
-        if (numbers[i] > 0){
-            sum (positiveNumbers);
-        }
+    function studentScores(array) {
+      var sum = 0;
+      for (var i = 0; i < array.length; i++) {
+        sum += array[i];
       }
-
-    console.log("Positive Numbers: ", positiveNumbers);
-    console.log("Sum of Positive Numbers: ", sum);
+      var average = Math.floor(sum / array.length);
+      return average;
+    }
+    var averageScore = studentScores(array);
+    console.log("Average Score:", averageScore);
   </script>
 </head>
-<body>
-  <h1>Years Reached</h1>
-  <button onclick="displayYears()">Sum Positive Numbers</button>
-  <div id="years"></div>
-</body>
 </html>
