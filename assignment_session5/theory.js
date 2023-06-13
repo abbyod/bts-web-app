@@ -10,4 +10,6 @@
 //With JSX, you can write code that looks very similar to HTML, but you have the power of
 //mixing JavaScript methods and variables into your code.
 //Developers can easily embed pieces of JS into templates without having to learn an additional language. 
-//Anyone familiar with HTML, CSS, or JS should have no problem reading and understanding JSX 
+//Anyone familiar with HTML, CSS, or JS should have no problem reading and understanding JSX.
+//I think this is time and energy saving, as users can apply their knowledge of other languages to use JSX,
+//and they will not have to learn anything new.
